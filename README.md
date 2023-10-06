@@ -25,9 +25,10 @@ A Bash script has been created, which is responsible for installing requirements
 
     For Mac:
     ./setup_and_run.sh
-
+```
+```bash
     For Windows:
-    bash ./setup_and_run.sh
+    setup_and_run.bat
 ```
 
 ### To access the API endpoints, use the following links:

@@ -1,15 +1,8 @@
 #!/bin/bash
 
-# Detect the operating system
-if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "cygwin" ]]; then
-    # Windows using Git Bash or Cygwin
-    VENV_SCRIPT="venv/Scripts/activate"
-    PYTHON_VAR="python"
-else
-    # Assume other OS (Linux or macOS)
-    VENV_SCRIPT="venv/bin/activate"
-    PYTHON_VAR="python3"
-fi
+VENV_SCRIPT="venv/bin/activate"
+PYTHON_VAR="python3"
+
 echo "_______________________________________________________________________________"
 echo "Creating & Activating Virtual Environment..."
 pip install virtualenv
